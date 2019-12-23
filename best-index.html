@@ -36,6 +36,47 @@
     .detail-table{
         padding:50px 50px 25px !important;
     }
+
+    /* Tablet View */
+    @media all and (min-width: 768px) and (max-width: 959px){
+        .main-container{
+            width:100%;
+        }
+        /* .email-container{
+            width:100%;
+        }
+        .content-container{
+            width:100%;
+        }
+        .footer{
+            width:100%;
+        }
+        .logo{
+            width:100%;
+        }    */
+    }
+
+    /* Smartphone View */
+    @media all and (max-width: 767px){            
+        .disclaimer{
+            display: none;
+        }
+        /* .main-wrapper{
+            width:100%;
+        }
+        .main-email-container{
+            width:600px;
+        }
+        .content-container{
+            width:100%;
+        }
+        .footer{
+            width:100%;
+        }
+        .logo{
+            width:100%;
+        }    */
+    }     
     }
 
 </style>
@@ -79,7 +120,7 @@ width="100%" cellspacing="0" cellpadding="0" border="0">
           font-size:.9rem; letter-spacing:1px;
           text-decoration:underline;">README: SHOPILICIOUS FASHIONS SALE 
         </span>
-        <br/>This is an original design i created for a friend who has a women's fashions online store.
+        <br/>This is an design i created for a business who has a women fashions online boutique. They specialize in dresses, handbags, and shoes. They described some ideas they have for a major sales campaign and asked me to do a mock-up for the promotional emails. Below is the result of my email campaign mock-up. The final project is pending until they decide on the items they want to discount on the sales campaign. 
       </td>
       <td style="width:30%; text-align:left; 
       font-family:Arial, Helvetica, sans-serif; 
@@ -92,10 +133,10 @@ width="100%" cellspacing="0" cellpadding="0" border="0">
           </span>
           <br/> html tables, html5, css3, responsive, webpack,
           <br/>web accessibility,
-                <a align="center" href="https://github.com/jerome-wilson-developer/email_promo-starbucks-happy-hour-drinks" target="_blank">
+                <a align="center" href="https://github.com/jerome-wilson-developer/email_promo-shopilicious-fashions-sale" target="_blank">
                   GITHUB
                 </a>, lighthouse, 
-                <a href=" https://starbucks-happy-hour-drinks.netlify.com/" target="_blank">
+                <a href="https://shopilicious-fashion-sale.netlify.com/" target="_blank">
                   NETLIFY
                 </a>.
           <hr/>
@@ -136,7 +177,7 @@ width="100%" cellspacing="0" cellpadding="0" border="0">
   <td>
 <table class="header" align="center" cellspacing="0" cellpadding="0" 
 border="0" width="100%" style="background-color:#ffffff; 
-color:#292929; padding:10px 20px; border:1px solid black;">
+color:#292929; padding:10px 20px;">
 
 <tr style="text-align:left; background-color:#ffffff;">
     <td>
@@ -162,7 +203,7 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 <tr class="section-1">
   <td>
       <!-- Start Header-Left-Column -->
-      <table class="header-left" width="66%" align="left" cellspacing="0" 
+      <table class="header-left" width="65%" align="left" cellspacing="0" 
       cellpadding="0" border="0" style="background: #4E54CB;
         background: -moz-linear-gradient(top, #4E54CB 0%, #4E54CB 100%);
         background: -webkit-linear-gradient(top, #4E54CB 0%,#4E54CB 100%);
@@ -180,7 +221,7 @@ color:#292929; padding:10px 20px; border:1px solid black;">
                 <h2 style="font-size:24px; margin:0px; font-weight:100;  padding:15px 25px; letter-spacing:.2rem; border:1px solid #ffffff; border-radius:5px; text-align:center;">
                   SHOPILICIOUS<br/>
                   <scan style="font-weight:600;">
-                    Dresses Handbags Shoes
+                    Dresses Shoes Handbags
                   </scan> 
                 </h2>
                 <h3 style="margin:0px; padding:0;">
@@ -203,7 +244,9 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 
 <!-- begin Header-Right-Column @width:33%; -->
       <table class="header-right" width="33%" align="right" 
-      cellspacing="0" cellpadding="0" border="0" style="background:#fff;">
+      cellspacing="0" cellpadding="0" border="0" 
+      style="background:#fff;
+      border:1px solid #0000ff;">
           <tr>
               <td style="font-family: 'Open Sans', 'Helvetica Neue', 
               Helvetica, Arial, 'Lucida Grande', sans-serif; 
@@ -223,14 +266,14 @@ color:#292929; padding:10px 20px; border:1px solid black;">
                           <td align="center;">
                               <a href="#" style="font-size:14px; font-weight:600; 
                               text-decoration:none; color:#4E54CB;">
-                                Handbags
+                                Shoes
                               </a>
                           </td>
 
                           <td align="center;">
                               <a href="#" style="font-size:14px; font-weight:600; 
                               text-decoration:none; columns: #4E54CB;">
-                                Shoes
+                                Handbags
                               </a>
                           </td>
                       </tr>
@@ -242,7 +285,9 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 
 <!-- begin photo image -->
                 <tr>
-                    <td align="center" valign="bottom" style="padding-top:16px;">
+                    <td align="center" valign="bottom" 
+                    style="padding-top:16px;
+                    border:1px solid #0000ff;">
                       <img src="img/NEW-SEASON-COLOURS.jpg" width="" height="" alt="2 female modeling colorful attire" 
                       style="position:relative; bottom:-18px;">
                     </td>
@@ -265,18 +310,18 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 
 <!-- Section  - Begin "SHOPILICIOUS NEW COLOURS NEW SEASON Section" -->
 
-      <!-- <tr class="section-3"> -->
+      <tr class="section-3">
 
     <!-- ADD THE PLACEHOLDER FOR THE LARGE PINK RECTANGLE -->
 
-          <!-- <td>
+          <td>
               <table class="advance-table" width="100%" align="left"
               cellspacing="0" cellpadding="0" border="0" 
-              style="padding:15px 15px 70px 15px; background:#fff;">         -->
+              style="padding:15px 15px 70px 15px; background:#fff;">        
       
                               <!-- BEGIN H3 HEADER -->
 
-                    <!-- <tr>
+                    <tr>
                         <td>
                             <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
                             Helvetica, Arial, 'Lucida Grande', sans-serif; 
@@ -288,43 +333,10 @@ color:#292929; padding:10px 20px; border:1px solid black;">
                     </tr>
               </table>
           </td>
-      </tr> -->
+      </tr>
 
       <!-- END H3 HEADER -->
 
- <!-- BEGIN 'LEFT and Right COLUMNs on Row 1' -->
-
- <!-- <tr>
-   <td>
-     <table>
-        <td>
-            <table class="left-column" width="50%" align="left"
-            cellspacing="0" cellpadding="0" border="0" 
-            style="padding:15px 15px 0px 15px; background:#fff;">
-            
-                <tr>
-                    <td align="right" class="left-store">
-                    <img src="img/dresses-sexy-work-dress.jpg" width="400" height="550" alt="red-dress-for-expensive-restaurant"/>
-                    </td>
-                </tr>
-            </table>
-        </td>    
-        <td>
-            <table class="left-column" width="50%" align="right"
-            cellspacing="0" cellpadding="0" border="0" 
-            style="padding:15px 15px 0px 15px; background:#fff;">
-            
-                <tr>
-                    <td align="right" class="left-store">
-                    <img src="img/dresses-sexy-work-dress.jpg" width="400" height="550" alt="red-dress-for-expensive-restaurant"/>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </table>
-  </td>
- </tr> -->   
-    
 
      
 
@@ -503,8 +515,8 @@ color:#292929; padding:10px 20px; border:1px solid black;">
            <table class="title-icon" width="100%" align="left" 
            cellspacing="0" cellpadding="0" border="0" style="padding:0;">
                <tr>
-                   <td style="">
-                     <img src="img/HAPPY-DAYS.jpg">
+                   <td>
+                     <img src="img/dresses-sexy-work-dress.jpg" width="220" height="310" alt=""/>
                    </td>
                    <td style="font-family: 'Open Sans', 'Helvetica Neue', 
                    Helvetica, Arial, 'Lucida Grande', sans-serif; 
@@ -575,38 +587,14 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Section 3 - begin section for 'buy 2 items ... get 1 for free' -->
 <tr class="section-3">
     <!-- ADD THE PLACEHOLDER FOR THE LARGE PINK RECTANGLE -->
   <td style="">    
     <table class="advance-table" width="100%"
     cellspacing="0" cellpadding="0" border="0" 
-    style="padding:0; margin:0; background:#fff;">  
+    style="padding:0; margin:0; background:#fff;">
 
-
-
-
-         <!-- <tr>
-           <td>
-             <table>
-               
-             </table>
-           </td>
-         </tr>                    -->
                   <tr><!-- BEGIN H3 HEADER -->
                       <td style="">
                           <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#0000ff; padding:20px 20px 20px 100px; font-weight:300; text-transform:capitalize; font-size:24px; margin:0px;" align="left">
@@ -698,7 +686,7 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 
         <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
         Helvetica, Arial, 'Lucida Grande', sans-serif; 
-        color:#FFFFFF; padding:36px 0 16px 0; font-weight:300; 
+        color:#0000ff; padding:10px 10px; font-weight:300; 
         text-transform:uppercase; font-size:24px; text-align:center;">
             This Thursday is the last day to get free shipping!
             <br/>Free shipping on all orders over $200.
@@ -708,14 +696,20 @@ color:#292929; padding:10px 20px; border:1px solid black;">
 <!-- End Hero-Left-Column --> 
 
 <!-- Start LEFT-Column -->
-<table class="left-column" width="50%" align="left" cellspacing="0" 
-cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
+<table class="left-column" width="50%" align="left" 
+cellspacing="0" cellpadding="0" border="0" 
+style="padding:15px 10px 30px 10px; 
+background-color:#eeeeee;
+border-radius:7px; 
+border:1px solid #F54084; 
+margin-bottom:30px;">
     <tr>  
         <td style="background:#F54084;"> <!--#fafafa-->
 
            <!-- this is the content inside this table -->
            <table class="title-icon" width="100%" align="left" 
-           cellspacing="0" cellpadding="0" border="0" style="padding:0; text-align:center;">
+           cellspacing="0" cellpadding="0" border="0" 
+           style="padding:0; text-align:center;">
                <tr>
                    <td>
                      <img src="img/CHECKED TUNIC DRESS.jpg">
@@ -767,9 +761,16 @@ cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
 </table>  
 <!-- End -Column -->
 
+
+
 <!-- Start Hero-Right-Column -->
-<table class="right-column" width="50%" align="right" cellspacing="0" 
-cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
+<table class="right-column" width="50%" align="right" 
+cellspacing="0" cellpadding="0" border="0" 
+style="padding:15px 10px 30px 10px; 
+border:1px solid #F54084; 
+background-color:#eeeeee;
+border-radius:7px; 
+margin-bottom:30px;">
     <tr>  
         <td style="background:#F54084;"> <!--#fafafa-->
 
@@ -829,442 +830,41 @@ cellpadding="0" border="0" style="padding:15px 15px 70px 15px;">
     </tr>
 </table>
 </td>
-</tr>
-  
+</tr>  
 <!-- End Hero-Right-Column -->                                        
 <!-- End of Section-2-THREE DRESSES SECTION -->
 
 
-
-
-
-
-
-
-
-
-<!-- Section 5 - Begin "All Joined Together Section" -->
-
-<!-- <tr class="section-5">
-      <td> 
-      <table class="join-together-table" width="100%" align="left" cellspacing="0" 
-      cellpadding="0" border="0" style="padding:25px 0px; background-color:#fff;">
-      <tr>
-          <td align="center"> -->
-
-<!-- h3 header title -->
-
-              <!-- <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
-              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-              color:#F54084; padding:0; font-weight:700; 
-              text-transform:capitalize; font-size:24px;" align="center">
-              Handbags
-              </h3>
-              <td>
-                <p>LOUIS VUITTON  YSL  MICHAEL KORS
-                  </p> 
-              </td>
-              <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
-              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-              color:#F54084; padding:0; font-weight:700; 
-              text-transform:capitalize; font-size:24px;" align="center">Handbags
-              </h3>
-          </td>
-      </tr>
-    </table>
-    </td>
-</tr> -->
-
-<!-- <tr>
-  <td>  -->
-            <!-- begin COLUMN-1 @ Left -->
-    <!-- <table class="left-column" width="33.33%" align="center" 
-    cellspacing="0" cellpadding="0" border="0"; style="padding:0; background:#eee;">    
-      <tr>
-          <td align="center"><img src="img/bags-Saint-Laurent-becky-large-shoulder-bag.jpg" width="250" height="250"  alt="" border:1px solid black; /></td>
-      </tr>
-      <tr>
-          <td align="center">          
-              <h5 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 
-              'Lucida Grande', sans-serif; padding:0px; font-size:14px; margin:0; color:#303030; font-weight:600; text-transform:uppercase;">
-                  LOUIS VUITTON
-              </h5>
-          </td>
-      </tr>  
-      <tr>
-          <td align="center">
-              <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-              color:#303030; padding:0; font-weight:400; font-size:14px;
-              line-height:1.8; margin:0;">
-              Computer manufacturer<br/>
-              Lenovo is getting flak...
-              </p>
-          </td>
-      </tr>  
-      <tr>
-          <td align="center">
-              <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-              color:#2792ec; font-weight:600; font-size:14px;
-              text-decoration:none; text-transform:capitalize;">
-                        BUY NOW
-              </a>
-          </td>
-      </tr>      
-</table>
-  </td>
-  </tr> -->
-<!-- end COLUMN-1 @ Left -->
-
-<!-- <tr>
-  <td> -->
-
-<!-- begin COLUMN-2 @ Middle  -->
-<!-- <table class="middle-column" width="33.33%" align="right" cellspacing="0" 
-cellpadding="0" border="0"; style="padding:0; background:#eee;"> 
-    <tr>
-        <td align="center"><img src="img/bags-michael-kors-Bedford-Travel.jpg" width="250" height="250"   alt=""/>
-        </td>
-    </tr>
-
-    <tr>
-        <td align="center">            
-            <h5 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 
-            'Lucida Grande', sans-serif; padding:0px; font-size:14px; margin:0; 
-            color:#303030; font-weight:600; text-transform:uppercase;">
-                MICHAEL KORS
-            </h5>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-            color:#303030; padding:0; font-weight:400; font-size:14px;
-            line-height:1.8; margin:0;">
-                Hero is a mobile <br/>payment system.
-            </p>
-        </td>
-    </tr>  
-    <tr>
-        <td align="center">
-            <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-            color:#2792ec; font-weight:600; font-size:14px;
-            text-decoration:none; text-transform:capitalize;">
-              BUY NOW
-            </a>
-        </td>
-      </tr>
-</table>  
-</td>
-</tr> -->
-<!-- end COLUMN-2 @ Middle -->
-<!-- begin COLUMN-3 @ Right -->
-<!-- <table class="right-column" width="33.33%" align="left" 
-cellspacing="0" cellpadding="0" border="0"; style="padding:0; background:#eee;"> 
-
-    <tr>
-        <td align="center"><img src="img/bags-Saint-Laurent-becky-large-shoulder-bag.jpg" width="250" height="250"   alt=""/>
-        </td>
-    </tr>
-
-    <tr>
-        <td align="center">            
-            <h5 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 
-            'Lucida Grande', sans-serif; padding:0px; font-size:14px; margin:0; 
-            color:#303030; font-weight:600; text-transform:uppercase;">
-                YSL
-            </h5>
-        </td>
-    </tr>
-
-    <tr>
-        <td align="center">
-            <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-            color:#303030; padding:0; font-weight:400; font-size:14px;
-            line-height:1.8; margin:0;">Gemalto says it's looking <br/>into a report.
-            </p>
-        </td>
-    </tr>
-
-        <tr>
-            <td align="center">
-                <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                color:#2792ec; font-weight:600; font-size:14px;
-                text-decoration:none; text-transform:capitalize;">
-                  BUY NOW
-                </a>
-            </td>
-          </tr>
-        </table>
-          
-       </td>
-      </tr>   -->
-<!-- end Right COLUMN-3 -->
-
-    <!-- </table>
-  </td>
-</tr>    -->
-<!-- Section 5 - End "All Joined Together Row" -->
-
-
-<!-- Section 6 - Begin "Details Row" -->      
-<!-- <tr class="section-6">
-  <td>    
-    <table class="detail-table" width="100%" align="left" 
-    cellspacing="0" cellpadding="0" border="0" 
-    style="padding:50px 0 25px;">    #fafafa  -->
-
-<!-- START OF ONE-ROW-TABLE -->
-<!-- <tr>  
-    <td> 
-        <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0;">
-           <tr>
-              <td> -->
-
-<!-- BEGIN ROW-1, LEFT, COLUMN-1 -->                  
-                  <!-- <table class="left-column" width="35%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0 15px 20px; border:1px solid #000; background:#4E54CB;"> -->
-
-<!-- START OF ICON TABLE ... COLUMN-1:ROW-1 -->                      
-                    <!-- <tr>
-                          <td>  
-                            <table class="icon-table" width="100%" align="left" cellspacing="0"       cellpadding="0" border="0" style="">
-                                <td>
-                                  <img src="https://i.postimg.cc/CK7kDJVm/phone-icon.png" 
-                                  alt="smartphone icon" />
-                                </td>
-                                <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                color:#fff; padding:0 0 0 15px;font-weight:600; 
-                                font-size:14px; text-decoration:none; text-transform:uppercase;">
-                                  xxxxxxx shoes
-                                </td>   
-                            </table>
-                          </td>
-                      </tr> -->
-<!-- END OF ICON-TABLE ... COLUMN-1:ROW-1 -->                       
-
-                      <!-- <tr>                       
-                          <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                color:#fff; font-weight:400; line-height:1.8; font-size:14px;">
-                                Tanjin is one of almost 2,000 people to have landed on Italy's southern coast.
-                                Tanjin is one of almost 2,000 people to have landed on Italy's southern coast.
-                                </p>
-                          </td>
-                      </tr>                      
-                  </table>   -->
-<!-- END ROW-1, LEFT, COLUMN-1 -->  
-                
-
-<!-- BEGIN ROW-1, RIGHT, COLUMN-2 -->                 
-                  <!-- <table class="right-column" width="65%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0 15px 20px; border:1px solid #303030; background-color:#fff;">
-                    <tr>
-                        <td> -->
-<!-- ICON-TABLE  ... BEGIN COLUMN-2:ROW-1 -->
-                          <!-- <table class="icon-table" width="100%" align="left" cellspacing="0"       cellpadding="0" border="0" style="">
-                              <td>
-                                <img src="img/menu_icon.png" alt="retina ready icon" />
-                              </td>
-                              <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                              color:#fff; padding:0 0 0 15px;font-weight:600; font-size:14px;
-                              text-decoration:none; text-transform:uppercase; color:#4E54CB;">
-                                xxxxxxx shoes
-                              </td>   
-                          </table>               
-                        </td>
-                    </tr> -->
-<!-- END OF ICON-TABLE ... COLUMN-2:ROW-1 --> 
-
-                    <!-- <tr>                       
-                        <td>
-                              <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                               color:#4E54CB; font-weight:400; line-height:1.8; font-size:14px;">
-                              The decision precluded a more aggresive, pre-rush hour to help. Tanjin is one of almost 2,000 people to have landed on Italy's southern coast. Tanjin is one of almost 2,000 people to have landed on Italy's southern coast. Tanjin is one of almost 2,000 people to have landed on Italy's southern coast.
-                              </p>
-                        </td>
-                    </tr>
-                </table> -->
-<!-- END ROW-1, RIGHT, COLUMN-2 -->
-
-              <!-- </td>
-            </tr>          
-          </table>
-        </td>
-      </tr>    -->
-<!-- END ROW-1 -->        
-
-
-
-
-
-
-
-<!-- BEGIN ROW-2 -->
-        <!-- <tr>  
-          <td>
-              <table class="one-row-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0;">     
-                <tr>
-                    <td> -->
-
-<!-- BEGIN ROW-2, LEFT, COLUMN-3 -->                 
-                        <!-- <table class="left-column" width="50%" align="left" 
-                        cellspacing="0" cellpadding="0" border="0" style="padding:0 15px 20px;"> 
-                            <tr>
-                                <td> -->
-
-<!-- ICON-TABLE  ... BEGIN ROW-2:COLUMN-3 -->
-                                  <!-- <table class="icon-table" width="100%" align="left" cellspacing="0"       cellpadding="0" border="0" style="">
-                                      <td>
-                                        <img src="https://i.postimg.cc/8CSmLjfP/check-icon.png" 
-                                        alt="check-mark icon" />
-                                      </td>
-                                      <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                      Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                      color:#333; padding:0 0 0 15px;font-weight:600; font-size:14px;
-                                      text-decoration:none; text-transform:uppercase;">
-                                        xxxxxxx shoes
-                                      </td>   
-                                  </table>
-                                </td>
-                            </tr>  -->
-<!-- ICON-TABLE ... END ROW-2:COLUMN-3 -->   
-
-                            <!-- <tr>                       
-                                <td>
-                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                      color:#333; font-weight:400; line-height:1.8; 
-                                      font-size:14px;">
-                                      Research shows that women politicians are considered more ethical than men.
-                                      </p>
-                                </td>
-                            </tr>     
-                        </table>   -->
-<!-- END ROW-2, LEFT, COLUMN-3 -->                   
-
-
-<!-- BEGIN ROW-2, RIGHT, COLUMN-4 -->              
-                        <!-- <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:0 15px 20px;">      
-                          <tr>
-                              <td> -->
-
-<!-- ICON-TABLE  ... BEGIN ROW-2:COLUMN-4 -->
-                                <!-- <table class="icon-table" width="100%" align="left" 
-                                cellspacing="0"  cellpadding="0" border="0" style="">
-                                    <td>
-                                      <img src="https://i.postimg.cc/9FwdSGGQ/settings-icon.png" 
-                                       alt="gear icon" />
-                                    </td>
-                                    <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                    Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                    color:#333; padding:0 0 0 15px;font-weight:600; 
-                                    font-size:14px; text-decoration:none; 
-                                    text-transform:uppercase;">
-                                      xxxxxxx shoes
-                                    </td>   
-                                </table>         
-                              </td>
-                          </tr>  -->
- <!-- ICON-TABLE ... END OF ROW-2:COLUMN-4 -->     
-
-                          <!-- <tr>                       
-                              <td>
-                                    <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                    Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                    color:#333; font-weight:400; line-height:1.8; 
-                                    font-size:14px;">
-                                    Asian stocks post modest gains tuesday. Oil rises on Greek debt talks.
-                                    </p>
-                              </td>
-                          </tr>      
-                      </table>  -->
- <!-- END ROW-2, RIGHT, COLUMN-4 -->
-
-                    <!-- </td>
-                  </tr>             
-                </table>
-              </td>
-            </tr>    -->
-<!-- END ROW-2 -->
-
-
-<!-- BEGIN ROW-3 -->
-        <!-- BEGIN ROW-3, RIGHT, COLUMN-6 -->               
-        <!-- <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:10px 10px; border: 1px solid #505050; background-color: #ffffff;">      
-            <tr> -->
-                <!-- "padding:0 15px 20px; -->
-                <!-- <td> -->
-<!-- ICON-TABLE  ... BEGIN ROW-3:COLUMN-6 -->
-
-                          <!-- <table class="icon-table" width="100%" align="left" cellspacing="0"       cellpadding="0" border="0" style="">
-                              <tr>                                  
-                                  <td>
-                                      <ul style="display:flex; text-align:center;">
-                                            <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Ariel Slingback by Beacon.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                            <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Bellini Zesty Corduroy Pump.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                            <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                      </ul>                                    
-                                  </td>
-                              </tr>
-                              
-                              <tr>
-                                  <td>
-                                      <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                      Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                      color:#2792ec; padding:15px; font-weight:600; font-size:14px;
-                                      text-decoration:none;">
-                                      SHOP NOW
-                                      </a>
-                                  </td>
-                              </tr>
-                          </table>   -->
-
-<!-- ICON-TABLE ... END OF ROW-3:COLUMN-6 -->
-                <!-- </td> -->
-            <!-- </tr>                            -->
-                      
-
-                      <!-- <tr>                       
-                          <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                color:#333; font-weight:400; line-height:1.8; font-size:14px;">
-                                xxxx SHOE STYLES DESCRIPTION: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
-                                </p>
-                          </td>
-                      </tr>      
-                </table>   -->
-<!-- END ROW-3, RIGHT, COLUMN-6 -->
-
-
-
-<!-- END ROW-3, LEFT, COLUMN-5 --> 
-
-
-
-
-
+<tr>
+    <td>
+        
 
 <!-- BEGIN ROW-3, RIGHT, COLUMN-6 -->               
-                <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:10px 10px; border: 1px solid #505050; background-color: #bbb;">      
+                <table class="right-column" width="100%" align="left" 
+                cellspacing="0" cellpadding="0" border="0" 
+                style="padding:10px 10px; border: 1px solid #F54084; 
+                background-color: #dddddd;
+                border-radius:7px;">      
                   <tr>
-                      <!-- "padding:0 15px 20px; -->
                       <td>
 <!-- ICON-TABLE  ... BEGIN ROW-3:COLUMN-6 -->
 
                                 <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
                                     <tr>                                  
-                                        <td style="color:white;">
+                                        <td>
                                             <ul style="display:flex; text-align:center;">
                                                 <!-- <img src="img/YSL-PUMPS.webp" width="100" height="100" alt="ysl-pumps" /> -->
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Ariel Slingback by Beacon.webp" width="150" height="150" alt="ysl-pumps" /></li>
+
                                                   <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Bellini Zesty Corduroy Pump.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li>
+
+                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li>                
+
+                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/bags-michael-kors-Bedford-Travel.jpg" width="150" height="150" alt="handbags" /></li>
+
+                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Ariel Slingback by Beacon.webp" width="150" height="150" alt="ysl-pumps" /></li>
+                                                  
+                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/bags-Saint-Laurent-becky-large-shoulder-bag.jpg" width="150" height="150" alt="handbag" /></li>
+                                                  <!-- <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li> -->
                                             </ul>                                     
                                         </td>
                                     </tr>                                     
@@ -1285,128 +885,24 @@ cellspacing="0" cellpadding="0" border="0"; style="padding:0; background:#eee;">
                             <tr>                       
                                 <td>
                                       <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                      color:#333; font-weight:400; line-height:1.8; font-size:14px; color:#0000ff;">
-                                      xxxx SHOE STYLES DESCRIPTION: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
+                                      color:#0000ff; font-weight:500; line-height:1.0; font-size:16px;">
+                                      <span style="font-weight:600; font-size:18px;
+                                      font-style:italic;">
+                                        DESIGNER SHOES AND HANDBAG CLEARANCE SALE:
+                                      </span>
+                                      <br/>
+                                        <br/>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
                                       </p>
                                 </td>
                             </tr>      
                       </table>  
 <!-- END ROW-3, RIGHT, COLUMN-6 -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- SEP10TUE --- THIS IS THE NEW 2-COLUMN ROW FOR THE SHOES SECTION -->
-<!-- BEGIN ROW-3, RIGHT, COLUMN-6 -->               
-<table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:10px 10px; border: 1px solid #505050; background-color: #bbbbbb;">      
-    <tr>
-        <td>
-<!-- ICON-TABLE  ... BEGIN ROW-3:COLUMN-6 -->
-                  <table class="icon-table" width="100%" align="left" cellspacing="0"       cellpadding="0" border="0" style="">
-                      <tr>                                  
-                          <td>
-                              <ul style="display:flex; text-align:center;">
-                                  <!-- <img src="img/YSL-PUMPS.webp" width="100" height="100" alt="ysl-pumps" /> -->
-                                    <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Ariel Slingback by Beacon.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                    <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Bellini Zesty Corduroy Pump.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                    <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                              </ul>                                      
-                          </td>
-                      </tr>                      
-                      <tr>
-                          <td>
-                              <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                              color:#2792ec; padding:15px; font-weight:600; font-size:14px;
-                              text-decoration:none;">
-                              SHOP NOW
-                              </a>
-                          </td>
-                      </tr>
-                  </table>  
-<!-- ICON-TABLE ... END OF ROW-3:COLUMN-6 -->
-        </td>
-    </tr>
-              <tr>                       
-                  <td>
-                        <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                        color:#333; font-weight:400; line-height:1.8; font-size:14px;">
-                        xxxx SHOE STYLES DESCRIPTION: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
-                        </p>
-                  </td>
-              </tr>      
-        </table>  
-<!-- END ROW-3, RIGHT, COLUMN-6 -->
-
-
-
-<!-- BEGIN ROW-3, RIGHT, COLUMN-6 -->               
-<!-- <table class="right-column" width="50%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:10px 10px; border: 1px solid #505050; background-color: #ffffff;">      
-    <tr>
-        <td> -->
-<!-- ICON-TABLE  ... BEGIN ROW-3:COLUMN-6 -->
-                  <!-- <table class="icon-table" width="100%" align="left" cellspacing="0"       cellpadding="0" border="0" style="">
-                      <tr>                                  
-                          <td>
-                              <ul style="display:flex; text-align:center;"> -->
-                                  <!-- <img src="img/YSL-PUMPS.webp" width="100" height="100" alt="ysl-pumps" /> -->
-                                    <!-- <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Ariel Slingback by Beacon.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                    <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Bellini Zesty Corduroy Pump.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                    <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                              </ul>                                      
-                          </td>
-                      </tr>                       
-                      <tr>
-                          <td>
-                              <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                              color:#2792ec; padding:15px; font-weight:600; font-size:14px;
-                              text-decoration:none;">
-                              SHOP NOW
-                              </a>
-                          </td>
-                      </tr>
-                  </table>   -->
-<!-- ICON-TABLE ... END OF ROW-3:COLUMN-6 -->
-        <!-- </td>
-    </tr>
-              <tr>                       
-                  <td>
-                        <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                        color:#333; font-weight:400; line-height:1.8; font-size:14px;">
-                        xxxx SHOE STYLES DESCRIPTION: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
-                        </p>
-                  </td>
-              </tr>      
-        </table>   -->
-<!-- END ROW-3, RIGHT, COLUMN-6 -->
-                    <!-- </td>
-                  </tr>              
-                </table>
-              </td>
-            </tr>   -->
-<!-- ONE-ROW-TABLE -->
-
-
-
-          
-</table>       
+    <!-- </td>
+</tr>         
+</table>        -->
 </td>
 </tr>     
 <!-- Section 6 - End "Details Row" -->
-
-
-
-
-
 
 
 
@@ -1421,7 +917,7 @@ cellspacing="0" cellpadding="0" border="0"; style="padding:0; background:#eee;">
           background: linear-gradient(to bottom, #4E54CB 0%,#4E54CB 100%);">
             <tr>
                 <td align="center" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">                  
-                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;color:#fff; padding:0 0 35px 0; margin:0;font-size:24px; text-transform:uppercase; font-weight:300;" align:"center">
+                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;color:#fff; padding:0 0 35px 0; margin:0;font-size:24px; text-transform:uppercase; font-weight:300;">
                       DON'T MISS OUT ON ANOTHER ONE OF OUR INCREDIBLE SALES EVENTS !
                     </h3>
                     <p style="font-style:italic; font-size:14px; margin:0; line-height:1.5; padding:0 0 35px 0; max-width:400; color:#fff;">
@@ -1441,27 +937,15 @@ cellspacing="0" cellpadding="0" border="0"; style="padding:0; background:#eee;">
 
 
 
-
-
-
-
-
 <!-- Start of Section-8-Footer-Row -->
 <tr>  
     <td>
         <table class="footer-table" width="100%" align="left" cellspacing="0" 
         cellpadding="0" border="0" style="padding:25px 0px 0px; 
         background:whitesmoke;">
-
 <!-- Begin Header -->
           <tr>
               <td align="center">
-
-                <!-- <h2 style="font-weight:700; font-family:'Open Sans', 
-                'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', 
-                sans-serif; color:#4E54CB; text-transform:uppercase;font-size:28px;">
-                    SHOPILICIOUS Dresses Handbags Shoes, LLC. 
-                </h2> -->
                 <h2 style="padding:25px 0px 10px; font-size:24px; margin:0px; font-weight:100; line-height:1.2;letter-spacing:.3rem;">
                 SHOPILICIOUS<br/>
                 <scan style="font-weight:500;">
@@ -1550,7 +1034,5 @@ cellspacing="0" cellpadding="0" border="0"; style="padding:0; background:#eee;">
     </td>
   </tr>
 </table><!--end main-wrapper .XXXXX{ width:100%;}-->
-
-<!-- }()); // end of file -->
   </body>
 </html>
