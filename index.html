@@ -11,74 +11,49 @@
 
 <style>
     /* Desktop View */
-    @media only screen and (min-width: 960px){
-    /* .container{ */
-        /* width: 600px; */
-    /* } */
-
-    /* .container{
-        width:100%;
-      } */
-      /* .header-left{
-        width:65%; */
-        /* height:; */
-      /* }
-      .header-right{
-        width:35%;
-        height:100%;
-      } */
-      /*artemis-dress*/
-      .lets-you-row .left-column{
-        /* width:33%; */
-      }
-      /* summer-dress */
-      .lets-you-row .middle-column{
-        /* width:33%; */
-      }
-      /*office-dress*/
-      .lets-you-row .right-column{
-        /* width:100%; */
-      }
-      .advance-table .image-head{
-        /* width:100%; */
-      }
-
-
-
-
-
-    /* Tablet View */
-    @media all and (min-width: 768px) and (max-width: 959px){
-    .main-container{
-        width:100%;
+    @media all and (max-width: 960px){
+        .main-wrapper{
+            width:100%;
+        }
+        .main-container{
+            width:100%
         }
     }
-
+    /* Tablet View */
+    @media all and (min-width: 768px) and (max-width: 959px){
+        .main-wrapper{
+            width:100%;
+        }
+        .main-container{
+            width:100%
+        }
+    }
     /* Smartphone View */
-    @media all and (max-width: 767px){            
-    .disclaimer{
-        display: none;
+    @media all and (max-width: 767px){
+        .main-wrapper{
+            width:100%;
         }
-    .header-left{
-        width:100%;
+        .main-container{
+            width:100%
+        }            
+        .disclaimer{
+            display: none;
         }
-    .header-right{
-        width:100%;
-        }
-    }    
-    
-}
+    }     
 </style>
 </head>
 
 
-<body style="background:white"> 
-<!-- begin the table-wrapper for the entire email @width:100%; -->
-<table class="cont" id="main-wrapper" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#ffffff; 
-font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+<body> 
+<!-- BEGIN PARENT TABLE FOR OUTER 100% EMAIL WRAPPER = #main-container{ width:100%; } -->
+<table id="main-container" align="center" width="100%" 
+cellspacing="0" cellpadding="0" border="0" 
+style="background:#ffffff; 
+font-family:Arial, Helvetica, sans-serif; 
+font-size:14px;">
 
 
-<!-- begin disclaimer announcing no intent of mcdonald proprietary infringements -->
+<!-- begin row for disclaimer section -->
 <tr>
     <td>
         <table class="disclaimer" width="100%" align="center" border="0" 
@@ -105,7 +80,7 @@ font-family:Arial, Helvetica, sans-serif; font-size:14px;">
                     font-size:.9rem; letter-spacing:1px;
                     text-decoration:underline;">README: SHOPILICIOUS FASHIONS SALE 
                     </span>
-                    <br/>This is a Sales & Marketing email design i created for a business who has a women fashions online boutique. They specialize in dresses, handbags, and shoes. They described some ideas they have for a major sales campaign and asked me to do a mock-up for the promotional emails. Below is the result of my email campaign mock-up.
+                    <br/>This is a Sales & Marketing email design i created for a business who has a women fashions online boutique. They specialize in dresses, handbags, and shoes. They described ideas they have for a major sales campaign and asked me to do a mock-up for the promotional emails. Below is the result of my email campaign mock-up.
                 </td>
                 <td style="width:30%; text-align:left; 
                 font-family:Arial, Helvetica, sans-serif; 
@@ -155,194 +130,281 @@ font-family:Arial, Helvetica, sans-serif; font-size:14px;">
         </table>
     </td>
 </tr>
-<!-- end disclaimer -->
+<!-- end row for disclaimer section -->
 
+<!-- <tr> -->
+    <!-- <td> -->
+        <!-- BEGIN PARENT TABLE FOR 600PX EMAIL WRAPPER = .main-container{ width:600px; } -->
+        <table class="main-container" width="600" align="center" 
+        cellspacing="0" cellpadding="0" border="0">
+        
+<!-- begin row for Udemy Logo and email metadata section -->
 <tr>
     <td>
-        <!--begin email-wrapper .container{ width:600px;}-->
-        <table class="container" width="600" align="center" 
-        cellspacing="0" cellpadding="0" border="0">
-            <tr>
+        <!-- begin table for "email-metadata" section -->
+        <!-- header:tabindex="0", and, aria-landmark=role:banner -->
+        <table class="header" align="center" cellspacing="0" 
+        cellpadding="0" border="0" width="100%" 
+        style="background-color:#ffffff; 
+        color:#292929; padding:10px 20px;">
+            <tr style="text-align:left; 
+            background-color:#ffffff;">
                 <td>
-                <!-- begin table for "email-metadata" section -->
-                    <!-- header:tabindex="0", and, aria-landmark=role:banner -->
-                    <table class="header" align="center" cellspacing="0" cellpadding="0" 
-                    border="0" width="100%" style="background-color:#ffffff; 
-                    color:#292929; padding:10px 20px;">
-                        <tr style="text-align:left; background-color:#ffffff;">
-                            <td>
-                                <p>Sent from Outlook</p>
-                                <hr/>  
-                                <p>From: SHOPILICIOUS</p>
-                                <p>Sent: Friday, October 23, 2019 4:32AM</p>
-                                <p>To: jerome-wilson-developer@hotmail.com</p>
-                                <p>Subject: FREE SHIPPING SALE</p>
-                            </td>
-                        </tr>        
-                    </table>
-            <!--end table for Udemy Logo and email metadata-->
+                    <p>Sent from Outlook</p>
+                    <hr/>  
+                    <p>From: SHOPILICIOUS</p>
+                    <p>Sent: Friday, December 23, 2019 4:32AM</p>
+                    <p>To: jerome-wilson-developer@hotmail.com</p>
+                    <p>Subject: FREE SHIPPING SALE</p>
+                </td>
+            </tr>        
+        </table>
+        <!-- end table for Udemy Logo and email metadata section -->
+    </td>
+</tr>
+<!-- end row for Udemy Logo and email metadata section -->
+
+
+
+<!-- begin row for header section -->
+<tr>
+    <td>
+        <!-- Start Header-Left-Column -->
+        <table class="header-left" width="64%" 
+        align="left" cellspacing="0" cellpadding="0" 
+        border="0" style="background: #4E54CB; 
+        background: -moz-linear-gradient(top, #4E54CB 0%, #4E54CB 100%);
+        background: -webkit-linear-gradient(top, #4E54CB 0%,#4E54CB 100%);
+        background: linear-gradient(to bottom, #4E54CB 0%,#4E54CB 100%); 
+        padding:50px 50px 40px 50px;">
+            <tr>
+                <td style="font-family:Arial, Helvetica, sans-serif; 
+                color:#fff;">                
+                    <h1 style="font-size:50px; margin-top:-30px; 
+                    padding:0; text-align:center;">
+                        FREE SHIPPING SALE
+                    </h1>
+                    <h2 style="font-size:24px; margin:0px; 
+                    font-weight:100; padding:15px 25px; 
+                    letter-spacing:.2rem; border:1px solid #ffffff; 
+                    border-radius:5px; text-align:center;">
+                    SHOPILICIOUS<br/>
+                    <scan style="font-weight:600;">
+                        Dresses Shoes Handbags
+                    </scan> 
+                    </h2>
+                    <h3 style="margin:0px; padding:0; 
+                    margin-top:20px;">
+                    <br/>ONLY 7 DAYS LEFT ... THIS OFFER ENDS JAN 31!
+                    </h3>
+                    <p style="font-size:18px; margin:0px; 
+                    line-height:1.5; padding:20px 0px 30px;">
+                        Free shipping on all orders over $200. 
+                        <br/>
+                        <span style="font-style:italic;">
+                            This offer ends during your local store's closing time!
+                        </span>               
+                    </p>
+                    <a href="#" class="ghost-btn" 
+                    style="margin:0; font-size:12px; 
+                    border-radius:3px; border:2px solid #fff; 
+                    color:#fff; padding:10px 15px; 
+                    text-decoration:none; 
+                    text-transform:uppercase;">
+                        SHOP NOW
+                    </a>
                 </td>
             </tr>
-
-
-            <!--begin section-1 for header row-->
-            <tr class="section-1">
-                <td>
-                    <!-- Start Header-Left-Column -->
-                    <table class="header-left" width="64%" 
-                    align="left" cellspacing="0" cellpadding="0" 
-                    border="0" style="background: #4E54CB; 
-                    background: -moz-linear-gradient(top, #4E54CB 0%, #4E54CB 100%);
-                    background: -webkit-linear-gradient(top, #4E54CB 0%,#4E54CB 100%);
-                    background: linear-gradient(to bottom, #4E54CB 0%,#4E54CB 100%); 
-                    padding:50px 50px 45px 50px!important;">
+        </table>  
+        <!-- End Header-Left-Column -->
+        <!-- begin Header-Right-Column @width:33%; -->
+        <table class="header-right" width="33%" align="right" 
+        cellspacing="0" cellpadding="0" border="0" 
+        style="background:#fff;
+        border-top:1px solid #0000ff; 
+        border-right:1px solid #0000ff; 
+        border-bottom:1px solid #0000ff;">
+            <tr>
+                <td style="font-family:Arial, Helvetica, sans-serif; 
+                color:#7d7d7d; padding:20px;">
+                    <!-- begin 3-items nav menu @width:100%; -->
+                    <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="margin-left:20px;">
                         <tr>
-                            <td style="font-family:Arial, Helvetica, sans-serif; color:#fff;">                
-                                <h1 style="font-size:50px; margin-top:-30px; padding:0; text-align:center;">
-                                    FREE SHIPPING SALE
-                                </h1>
-                                <h2 style="font-size:24px; margin:0px; font-weight:100;  padding:15px 25px; letter-spacing:.2rem; border:1px solid #ffffff; border-radius:5px; text-align:center;">
-                                SHOPILICIOUS<br/>
-                                <scan style="font-weight:600;">
-                                    Dresses Shoes Handbags
-                                </scan> 
-                                </h2>
-                                <h3 style="margin:0px; padding:0; margin-top:20px;">
-                                <br/>ONLY 7 DAYS LEFT ... THIS OFFER ENDS JAN 31!
-                                </h3>
-                                <p style="font-size:18px; margin:0px; 
-                                line-height:1.5; padding:20px 0px 30px;">
-                                    Free shipping on all orders over $200. 
-                                    <br/><span style="font-style:italic;">This offer ends during your local store's closing time! </span>               
-                                </p>
-                                <a href="#" class="ghost-btn" style="margin:0; font-size:12px; 
-                                border-radius:3px; border:2px solid #fff; color:#fff; 
-                                padding:10px 15px; text-decoration:none; text-transform:uppercase;">
-                                    SHOP NOW
+                            <td align="center;">
+                                <a href="#" style="font-size:14px; 
+                                font-weight:600; text-decoration:none; 
+                                color:#4E54CB;">
+                                    Dresses
+                                </a>
+                            </td>
+                            <td align="center;">
+                                <a href="#" style="font-size:14px; 
+                                font-weight:600; text-decoration:none; 
+                                color:#4E54CB;">
+                                    Shoes
+                                </a>
+                            </td>
+                            <td align="center;">
+                                <a href="#" style="font-size:14px; 
+                                font-weight:600; text-decoration:none; 
+                                columns: #4E54CB;">
+                                    Handbags
                                 </a>
                             </td>
                         </tr>
-                    </table>  
-                    <!-- End Header-Left-Column -->
-                    <!-- begin Header-Right-Column @width:33%; -->
-                    <table class="header-right" width="33%" align="right" 
-                    cellspacing="0" cellpadding="0" border="0" 
-                    style="background:#fff;
-                    border-top:1px solid #0000ff; 
-                    border-right:1px solid #0000ff; 
-                    border-bottom:1px solid #0000ff;">
-                        <tr>
-                            <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                            color:#7d7d7d; padding:20px;">
-                                <!-- begin 3-items nav menu @width:100%; -->
-                                <table class="menu-table" width="100%" align="center" 
-                                cellspacing="0" cellpadding="0" border="0">
-                                    <tr>
-                                        <td align="center;">
-                                            <a href="#" style="font-size:14px; font-weight:600; 
-                                            text-decoration:none; color:#4E54CB;">
-                                                Dresses
-                                            </a>
-                                        </td>
-                                        <td align="center;">
-                                            <a href="#" style="font-size:14px; font-weight:600; 
-                                            text-decoration:none; color:#4E54CB;">
-                                                Shoes
-                                            </a>
-                                        </td>
-                                        <td align="center;">
-                                            <a href="#" style="font-size:14px; font-weight:600; 
-                                            text-decoration:none; columns: #4E54CB;">
-                                                Handbags
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <!-- end 3-items nav menu @width:100%; -->
-                            </td>
-                        </tr>
-                        <!-- begin photo image -->
-                        <tr>
-                            <td align="center" valign="bottom" 
-                            style="padding-top:16px;">
-                                <img src="img/NEW-SEASON-COLOURS.jpg" 
-                                width="" height="400" 
-                                alt="2 female modeling colorful attire" 
-                                style="position:relative;">
-                            </td>
-                        </tr>
-                        <!-- end photo image -->
-                    </table> 
-                    <!-- end Header-Right-Column @width:33%; -->
-                </td>
-            </tr>
-            <!-- End of Section-1-Header-Row @ width:100%; -->
-
-
-            <!-- Section  - Begin "SHOPILICIOUS NEW COLOURS NEW SEASON Section" -->
-            <tr class="section-3">
-                <td>
-                    <table class="advance-table" width="100%" align="left"
-                    cellspacing="0" cellpadding="0" border="0" 
-                    style="padding:15px 15px 70px 15px; background:#fff;">
-                        <tr>
-                            <td>
-                                <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                color:#0000ff!important; padding:25px 0 5px 0; font-weight:300; 
-                                text-transform:uppercase!important; font-size:24px; margin:0px;" align="left">
-                                    SHOPILICIOUS   
-                                </h3>
-                            </td>
-                        </tr>
                     </table>
+                    <!-- end 3-items nav menu @width:100%; -->
                 </td>
             </tr>
-            <!-- END H3 HEADER -->
-
-            <!-- Start of Section-2-THREE DRESSES SECTION -->            
-            <tr class="Section-2-main-container">
-                <td class="lets-you-row section-2-main-container" 
-                style="background:#303030;
-                border:1px solid white;">
-                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
-                    Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                    color:#FFFFFF; padding:36px 0 16px 0; font-weight:300; 
-                    text-transform:uppercase; font-size:24px; text-align:center;">
-                    choose your faves 
-                    <br/>
-                    Free shipping on all orders over $200.
+            <!-- begin photo image -->
+            <tr>
+                <td align="center" valign="bottom" 
+                style="padding-top:16px;">
+                    <img src="img/NEW-SEASON-COLOURS.jpg" 
+                    width="" height="400" 
+                    alt="2 female modeling colorful attire" 
+                    style="position:relative;">
+                </td>
+            </tr>
+            <!-- end photo image -->
+        </table> 
+        <!-- end Header-Right-Column @width:33%; -->
+    </td>
+</tr>
+<!-- end row for header section -->
+<!-- begin row for 'h3 header-shopilicious' section -->
+<tr>
+    <td>
+        <!-- begin table for h3 header -->        
+        <table class="advance-table" width="100%" align="left"
+        cellspacing="0" cellpadding="0" border="0" 
+        style="padding:50px 20px 70px 100px; background:#fff;">
+            <tr>
+                <td>
+                    <h3 style="font-family:Arial, Helvetica, sans-serif;
+                    color:#0000ff!important; padding:25px 0 5px 0; 
+                    font-weight:300; text-transform:uppercase!important; 
+                    font-size:24px; margin:0px;" align="left">
+                        SHOPILICIOUS   
                     </h3>
-                    <!-- Start table for Left-Column -->
-                    <table class="left-column" width="33.33%" align="left" cellspacing="0" 
-                    cellpadding="0" border="0" 
-                    style="padding:15px 0px 70px 0px;">
-                        <tr>  
-                            <td style="background:#4E54CB; border:1px solid white;">
-                                <!-- content inside left column -->
-                                <table class="title-icon" width="100%" align="left" 
-                                cellspacing="0" cellpadding="0" border="0" style="padding:0;">
-                                    <tr>
-                                        <td>
-                                            <img src="img/ARTEMIS-DRESS.jpg">
-                                        </td>
-                                        <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                        Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                        color:#fff; font-weight:600; 
-                                        text-transform:uppercase; font-size:14px; 
-                                        text-align:center; padding:0px 0px 0px 0px;">
-                                            ARTEMIS DRESS
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
+                </td>
+            </tr>
+        </table>
+        <!-- end table for h3 header -->
+    </td>
+</tr>
+<!-- end row for 'h3 header-shopilicious' section -->
+
+<!-- begin parent table for 'choose-your-faves' section -->           
+<tr>
+    <td class="choose-your-faves" 
+    style="background:#303030; 
+    border:1px solid white;">
+        <h3 style="font-family:Arial, Helvetica, sans-serif; 
+        color:#FFFFFF; padding:36px 0 16px 0; 
+        font-weight:300; text-transform:uppercase; 
+        font-size:24px; text-align:center;">
+        choose your faves 
+        <br/>
+        <br/>
+        Free shipping on all orders over $200.
+        </h3>
+            <!-- begin table for left-column -->
+            <table class="left-column" width="33.33%" 
+            align="left" cellspacing="0" 
+            cellpadding="0" border="0" 
+            style="padding:15px 0px 70px 0px;">
+                <tr>  
+                    <td style="background:#4E54CB; 
+                    border:1px solid white;">
+                        <!-- content inside left column -->
+                        <table class="title-icon" width="100%" 
+                        align="left" cellspacing="0" cellpadding="0" 
+                        border="0" style="padding:5px 5px;">
+                            <tr>
+                                <td>
+                                    <img src="img/ARTEMIS-DRESS.jpg">                          
+                                </td>
+                                <td style="font-family:Arial, Helvetica, sans-serif;
+                                color:#ffffff; font-weight:600; 
+                                text-transform:uppercase; font-size:14px; 
+                                text-align:center; padding:5px 1px;">
+                                    ARTEMIS DRESS
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid white;">
+                        <p style="font-family:Arial, Helvetica, sans-serif;
+                        color:#fff; padding:0px 15px 0px 15px; 
+                        font-weight:400; line-height:1.8;
+                        font-size:14px;">
+                        <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                        This gorgeous dress is such a must-have for the new season!
+                        This gorgeous dress is such a must-have for the new season!
+                        This gorgeous dress is such a
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid white;">
+                        <p style="font-family:Arial, Helvetica, sans-serif;
+                        color:#fff; padding:0px 0px 0px 15px; 
+                        font-weight:400; line-height:1.8; font-size:14px;">
+                        <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                        $129.00 on sale! 
+                        <span style="text-decoration:line-through;">
+                            $179.00 reg. price
+                        </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" style="font-family:Arial, Helvetica, sans-serif; 
+                        color:#2792ec; background-color:white; 
+                        padding:5px 15px; border:1px solid #2792ec; 
+                        border-radius:7px; font-weight:600; font-size:18px; 
+                        text-decoration:none;">
+                            shop now
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <!-- end table for left-column -->
+            <!-- begin table for middle-column -->
+            <table class="middle-column" width="33.33%" align="left" 
+            cellspacing="0" cellpadding="0" border="0" 
+            style="padding:15px 0px 70px 0px;">
+                <tr>  
+                    <td style="background:#4E54CB; 
+                    border:1px solid white;">
+                        <!-- content inside middle column -->
+                        <table class="title-icon" width="100%" align="left" 
+                        cellspacing="0" cellpadding="0" border="0" 
+                        style="padding:5px 5px;">
+                            <tr>
+                                <td>
+                                    <img src="img/IRIS-DRESS.jpg" 
+                                    width="220" height="310" 
+                                    alt="picture of woman in a summer dress"/>
+                                </td>
+                                <td style="font-family:Arial, Helvetica, sans-serif;
+                                color:#ffffff; font-weight:600; 
+                                text-transform:uppercase; font-size:14px; 
+                                text-align:center; padding:5px 1px;">
+                                    SUMMER
+                                    <br/>DRESS
+                                </td>
+                            </tr>
+                        </table>
                         <tr>
                             <td style="border:1px solid white;">
-                                <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                color:#fff; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
+                                <p style="font-family:Arial, Helvetica, sans-serif;
+                                color:#fff; padding:0px 15px 0px 15px; 
+                                font-weight:400; line-height:1.8;
                                 font-size:14px;">
                                 <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
                                 This gorgeous dress is such a must-have for the new season!
@@ -353,168 +415,118 @@ font-family:Arial, Helvetica, sans-serif; font-size:14px;">
                         </tr>
                         <tr>
                             <td style="border:1px solid white;">
-                                <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                color:#fff; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
+                                <p style="font-family:Arial, Helvetica, sans-serif; 
+                                color:#fff; padding:0px 0px 0px 15px; 
+                                font-weight:400; line-height:1.8; 
                                 font-size:14px;">
                                 <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-                                $129.00 on sale! <span style="text-decoration:line-through;">$179.00 reg. price</span>
+                                $89.00 on sale! 
+                                <span style="text-decoration:line-through;">
+                                    $159.00 reg. price
+                                </span>
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <a href="#" style="font-family:Arial, Helvetica, sans-serif; 
+                                <a href="#" 
+                                style="font-family:Arial, Helvetica, sans-serif;
                                 color:#2792ec; background-color:white; 
                                 padding:5px 15px; border:1px solid #2792ec; 
-                                border-radius:7px; font-weight:600; font-size:18px; 
-                                text-decoration:none;">
+                                border-radius:7px; font-weight:600; 
+                                font-size:18px; text-decoration:none;">
                                     shop now
                                 </a>
                             </td>
                         </tr>
-                    </table>
-                <!-- </td>
-            </tr>   -->
-<!-- End Hero-Left-Column -->
-<!-- Start Hero-Middle-Column -->
-                    <table class="middle-column" width="33.33%" align="left" cellspacing="0" 
-                    cellpadding="0" border="0" style="padding:15px 0px 70px 0px;">
-                        <tr>  
-                            <td style="background:#4E54CB; border:1px solid white;">
-                                <!-- content inside middle column -->
-
-                                <table class="title-icon" width="100%" align="left" 
-                                cellspacing="0" cellpadding="0" border="0" style="padding:0;">
-                                    <tr>
-                                        <td><img src="img/IRIS-DRESS.jpg"></td>
-                                        <td style="font-family:Arial, Helvetica, sans-serif; 
-                                        color:#fff; font-weight:600; 
-                                        text-transform:uppercase; font-size:14px; 
-                                        text-align:center; padding:0px 0px 0px 0px;">
-                                            SUMMER
-                                            <br/>DRESS
-                                        </td>
-                                    </tr>
-                                </table>
-                                <tr>
-                                    <td style="border:1px solid white;">
-                                        <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-                                        Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                        color:#fff; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
-                                        font-size:14px;">
-                                        <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-                                        This gorgeous dress is such a must-have for the new season!
-                                        This gorgeous dress is such a must-have for the new season!
-                                        This gorgeous dress is such a
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="border:1px solid white;">
-                                        <p style="font-family:Arial, Helvetica, sans-serif; 
-                                        color:#fff; padding:0px 0px 0px 15px; 
-                                        font-weight:400; line-height:1.8; font-size:14px;">
-                                        <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-                                        $89.00 on sale! 
-                                        <span style="text-decoration:line-through;">
-                                            $159.00 reg. price
-                                        </span>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                        Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                        color:#2792ec; background-color:white; padding:5px 15px; border:1px solid #2792ec; border-radius:7px; font-weight:600; font-size:18px;
-                                        text-decoration:none;">
-                                            shop now
-                                        </a>
-                                    </td>
-                                </tr>
-                            </td>
-                        </tr> 
-                    </table>
-<!-- End Hero-Middle-Column -->
-
-<!-- Start Hero-Right-Column -->
-                    <table class="right-column" width="33.33%" align="left" 
-                    cellspacing="0" cellpadding="0" border="0" 
-                    style="padding:15px 0px 70px 0px;">
-                        <tr>  
-                            <td style="background:#4E54CB; border:1px solid white;">
-
-                                <!-- content inside right column -->
-                                <table class="title-icon" width="100%" align="left" 
-                                cellspacing="0" cellpadding="0" border="0" style="padding:0;">
-                                    <tr>
-                                        <td>
-                                            <img src="img/dresses-sexy-work-dress.jpg" width="220" height="310" alt=""/>
-                                        </td>
-                                        <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                        Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                        color:#fff; font-weight:600; 
-                                        text-transform:uppercase; font-size:14px; 
-                                        text-align:center; padding:0px 0px 0px 0px;">
-                                            OFFICE DRESS
-                                        </td>
-                                    </tr>
-                                </table>
-                                    <tr>
-                                        <td style="border:1px solid white;">
-                                            <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-                                            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                            color:#fff; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
-                                            font-size:14px;">
-                                            <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-                                            This gorgeous dress is such a must-have for the new season!
-                                            This gorgeous dress is such a must-have for the new season!
-                                            This gorgeous dress is such 
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="border:1px solid white;">
-                                            <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-                                            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                            color:#fff; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
-                                            font-size:14px;">
-                                            <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-                                            $59.00 on sale! <span style="text-decoration:line-through;">$119.00 reg. price</span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                            color:#2792ec; background-color:white; padding:5px 15px; border:1px solid #2792ec; border-radius:7px; font-weight:600; font-size:18px;
-                                            text-decoration:none;">
-                                                shop now
-                                            </a>
-                                        </td>
-                                    </tr>
-                            </td>
-                        </tr>
-                    </table>                
-                    <!-- End Hero-Right-Column -->
-                </td>
-            </tr>                                     
-            <!-- End of Section-2-THREE DRESSES SECTION -->
+                    </td>
+                </tr> 
+            </table>
+            <!-- end table for middle-column -->
+            <!-- begin table for right-column -->
+            <table class="right-column" width="33.33%" 
+            align="right" cellspacing="0" cellpadding="0" 
+            border="0" style="padding:15px 0px 70px 0px;">
+                <tr>  
+                    <td style="background:#4E54CB; 
+                    border:1px solid white;">
+                        <!-- content inside right column -->
+                        <table class="title-icon" width="100%" 
+                        align="right" cellspacing="0" cellpadding="0" 
+                        border="0" style="padding:5px 5px;;">
+                            <tr>
+                                <td>
+                                    <img src="img/dresses-sexy-work-dress.jpg" 
+                                    width="220" height="310" 
+                                    alt="picture of woman in an office dress"/>
+                                </td>
+                                <td style="font-family:Arial, Helvetica, sans-serif;
+                                color:#ffffff; font-weight:600; 
+                                text-transform:uppercase; font-size:14px; 
+                                text-align:center; padding:5px 1px;">
+                                    OFFICE DRESS
+                                </td>
+                            </tr>
+                        </table>
+                            <tr>
+                                <td style="border:1px solid white;">
+                                    <p style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#fff; padding:0px 15px 0px 15px; 
+                                    font-weight:400; line-height:1.8;
+                                    font-size:14px;">
+                                    <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                                    This gorgeous dress is such a must-have for the new season!
+                                    This gorgeous dress is such a must-have for the new season!
+                                    This gorgeous dress is such 
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid white;">
+                                    <p style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#fff; padding:0px 0px 0px 15px; 
+                                    font-weight:400; line-height:1.8; font-size:14px;">
+                                    <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                                    $59.00 on sale! 
+                                    <span style="text-decoration:line-through;">
+                                        $119.00 reg. price
+                                    </span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#2792ec; background-color:white; padding:5px 15px; border:1px solid #2792ec; border-radius:7px; 
+                                    font-weight:600; font-size:18px; text-decoration:none;">
+                                        shop now
+                                    </a>
+                                </td>
+                            </tr>
+                    </td>
+                </tr>
+            </table>                
+            <!-- end table for right-column -->
+    </td>
+</tr>                                     
+<!-- end parent table for 'choose-your-faves' section -->
 
 
-<!-- Section 3 - begin section for 'buy 2 items ... get 1 for free' -->
-<tr class="section-3">
-<!-- ADD THE PLACEHOLDER FOR THE LARGE PINK RECTANGLE -->
+
+<!-- begin parent table for 'buy 2 items' section -->
+<tr>
     <td>    
-        <table class="advance-table" width="100%"
+        <table class="buy-2-items" width="100%"
         cellspacing="0" cellpadding="0" border="0" 
-        style="padding:0; margin:0; background:#fff;">
+        style="padding:0; margin:0; 
+        background:#fff;">
             <!-- BEGIN H3 HEADER -->
             <tr>
                 <td>
-                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color:#0000ff; padding:20px 20px 20px 100px; font-weight:300; text-transform:capitalize; font-size:24px; margin:0px;" align="left">
+                    <h3 style="font-family:Arial, Helvetica, sans-serif; 
+                    color:#0000ff; padding:50px 20px 70px 100px; 
+                    font-weight:300; text-transform:capitalize; 
+                    font-size:24px; margin:0px;" align="left">
                         SHOPILICIOUS    
                     </h3>
                 </td>
@@ -523,51 +535,47 @@ font-family:Arial, Helvetica, sans-serif; font-size:14px;">
             <!-- BEGIN 'LEFT COLUMN' -->
             <tr>
                 <td>
-                    <table class="left-column" width="50%" align="left"
-                        cellspacing="0" cellpadding="0" border="0" 
-                        style="padding:0; background:#fff;">
+                    <table class="left-column" width="50%" 
+                    align="left" cellspacing="0" cellpadding="0" 
+                    border="0" style="padding:0; background:#fff;">
                         <tr>
-                            <td align="right" class="left-store" 
-                            style="">
+                            <td align="right" class="left-store">
                                 <img src="img/NEW-SEASON-COLOURS.jpg" 
                                 width="420" height="500" 
-                                alt="" 
-                                style="border:1px solid black;"/>
+                                alt="picture of 2 fashion models"/>
                             </td>
                         </tr>
                     </table>
-                    <!-- END 'LEFT COLUMN' -->  
-
+                    <!-- END 'LEFT COLUMN' -->
                     <!-- BEGIN 'RIGHT COLUMN' -->
                     <table class="right-column" width="49%" align="right"
                         cellspacing="0" cellpadding="0" border="0" 
-                        style="padding:20px 20px 125px 20px; 
-                        margin-right:7px; background:#F54084; 
-                        border:1px solid blue;">
+                        style="padding:20px 20px 158px 20px; 
+                        margin-right:7px; background:#F54084;">
                         <tr>
                             <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
+                                <p style="font-family:Arial, Helvetica, sans-serif;
                                 color:#fff; padding:20px 20px; font-weight:400; 
-                                text-transform:uppercase; font-size:18px; margin:0px;" align="left">
+                                text-transform:uppercase; font-size:1.5rem; margin:0px;
+                                text-align:center;">
                                     BUY 2 ITEMS
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td style="border:1px dotted #fff;">
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
+                                <p style="font-family:Arial, Helvetica, sans-serif;
                                 color:#fff; padding:20px 20px; font-weight:700; 
-                                text-transform:uppercase; font-size:60px; margin:0px;" align="left">
-                                    GET 1 FOR FREE
+                                text-transform:uppercase; font-size:60px; margin:0px;
+                                text-align:center;">
+                                    GET 1 
+                                    <br/>FOR FREE
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
+                                <p style="font-family:Arial, Helvetica, sans-serif;
                                 color:#fff; padding:20px 20px; font-weight:300; 
                                 text-transform:uppercase; font-size:12px; margin:0px;" align="left">
                                     USE CODE: 12458
@@ -575,11 +583,10 @@ font-family:Arial, Helvetica, sans-serif; font-size:14px;">
                             </td>
                         </tr>
                         <tr>
-                            <td style="background-color:#fff;">
-                                <a style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                Helvetica, Arial, 'Lucida Grande', sans-serif; 
+                            <td style="background-color:#fff; text-align:center; padding:10px;">
+                                <a style="font-family:Arial, Helvetica, sans-serif;
                                 color:#4E54CB; padding:20px 20px; font-weight:300; 
-                                text-transform:uppercase; font-size:24px; margin:0px;" align="left">
+                                text-transform:uppercase; font-size:24px;">
                                     SHOP NOW
                                 </a>
                             </td>
@@ -590,263 +597,249 @@ font-family:Arial, Helvetica, sans-serif; font-size:14px;">
         </table>
     </td>
 </tr>
-<!-- END 'RIGHT COLUMN' -->
-<!-- Section 3 - begin section for 'buy 2 items ... get 1 for free' -->
+<!-- end right-column -->
+<!-- end parent table for 'buy 2 items' section -->
 
-
-
-
-
-
-
-
-
-<!-- Start of Section-TWO DRESSES SECTION -->            
-<tr class="Section-2-main-container">
-    <td class="lets-you-row section-2-main-container" 
-    style="background:#fff;"> <!-- #eee ; tan; -->
-
-        <h3 style="font-family: 'Open Sans', 'Helvetica Neue', 
-        Helvetica, Arial, 'Lucida Grande', sans-serif; 
-        color:#0000ff; padding:10px 10px; font-weight:300; 
-        text-transform:uppercase; font-size:24px; text-align:center;">
-            This Thursday is the last day to get free shipping!
-            <br/>Free shipping on all orders over $200.
-        </h3>
-
-<!-- Start Hero-Left-Column -->
-<!-- End Hero-Left-Column --> 
-
-<!-- Start LEFT-Column -->
-<table class="left-column" width="50%" align="left" 
-cellspacing="0" cellpadding="0" border="0" 
-style="padding:15px 10px 30px 10px; 
-background-color:#eeeeee;
-border-radius:7px; 
-border:1px solid #F54084; 
-margin-bottom:30px;">
-    <tr>  
-        <td style="background:#F54084;"> <!--#fafafa-->
-
-           <!-- this is the content inside this table -->
-           <table class="title-icon" width="100%" align="left" 
-           cellspacing="0" cellpadding="0" border="0" 
-           style="padding:0; text-align:center;">
-               <tr>
-                   <td>
-                     <img src="img/CHECKED TUNIC DRESS.jpg">
-                   </td>
-                   <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                   Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                   color:#ffffff; padding:15px 15px; font-weight:600; 
-                   text-transform:uppercase; font-size:14px;">
-                       CHECKED TUNIC ... SAVE OVER 50%
-                   </td>
-               </tr>
-           </table>
-   <tr>
-       <td>
-          <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 
-          'Lucida Grande', sans-serif; color:#303030; padding:0px 0px 0px 15px; 
-          font-weight:400; line-height:1.8; font-size:14px;">
-           <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-           Round neck midi dress with sleeves falling below the elbow with pleated details. 
-           <br/>Features a matching fabric belt, side vents at the hem, 
-           button fastening in the back hidden by a placket.
-           </p>
-       </td>
-   </tr>
-   <tr>
-      <td>
-          <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-          Helvetica, Arial, 'Lucida Grande', sans-serif; 
-          color:#303030; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
-          font-size:14px;">
-          <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-          $89.00 on sale! <span style="text-decoration:line-through;">$179.00 reg. price</span>
-          </p>
-      </td>
-  </tr>
+<!-- begin parent row for 'tunic-or-contrast-dress section -->
 <tr>
-    <td style="">
-        <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-        Helvetica, Arial, 'Lucida Grande', sans-serif; 
-        color:#F54084; background-color:white; padding:5px 15px; 
-        border:1px solid #F54084; border-radius:5px; font-weight:600; 
-        font-size:18px; text-decoration:none;">
-            shop now
-        </a>
+        <!-- begin h3 header row for 'free shipping over $200' -->
+    <td class="free-shipping-200" style="background:#fff;">
+        <h3 style="font-family:Arial, Helvetica, sans-serif;
+        color:#0000ff; padding:50px 20px 70px 100px; font-weight:300; 
+        text-transform:uppercase; font-size:24px; text-align:left;">
+            This Thursday is the last day for 
+            <br/>free shipping on all orders over $200.
+        </h3>
+        <!-- end h3 header row for 'free shipping over $200' -->        
+        <!-- begin 50% table for left-column for 'tunic-or-contrast-dress- section -->
+            <table class="left-column" width="50%" align="left" 
+            cellspacing="0" cellpadding="0" border="0" 
+            style="padding:15px 10px 30px 10px; 
+            background-color:#eeeeee;
+            border-radius:7px; 
+            border:1px solid #F54084; 
+            margin-bottom:30px;">
+                <tr>  
+                    <td style="background:#F54084;">
+                    <!-- this is the content inside this table -->
+                        <table class="title-icon" width="100%" align="left" 
+                        cellspacing="0" cellpadding="0" border="0" 
+                        style="padding:0; text-align:center;">
+                            <tr>
+                                <td>
+                                    <img src="img/CHECKED TUNIC DRESS.jpg">
+                                </td>
+                                <td style="font-family:Arial, Helvetica, sans-serif;
+                                color:#ffffff; padding:15px 15px; font-weight:600; 
+                                text-transform:uppercase; font-size:14px;">
+                                    CHECKED TUNIC ... SAVE OVER 50%
+                                </td>
+                            </tr>
+                        </table>
+                            <tr>
+                                <td>
+                                    <p style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#303030; padding:0px 0px 0px 15px; 
+                                    font-weight:400; line-height:1.8; font-size:14px;">
+                                    <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                                    Round neck midi dress with sleeves falling below the elbow with pleated details. 
+                                    <br/>Features a matching fabric belt, side vents at the hem, 
+                                    button fastening in the back hidden by a placket.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#303030; padding:0px 0px 0px 15px; 
+                                    font-weight:400; line-height:1.8; font-size:14px;">
+                                    <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                                    $89.00 on sale! 
+                                    <span style="text-decoration:line-through;">$179.00 reg. price</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" style="font-family:Arial, Helvetica, sans-serif; 
+                                    color:#F54084; background-color:white; 
+                                    padding:5px 15px; border:1px solid #F54084; 
+                                    border-radius:5px; font-weight:600; font-size:18px; text-decoration:none;">
+                                        shop now
+                                    </a>
+                                </td>
+                            </tr>                
+                        </td>
+                    </tr>
+            </table>
+            <!-- end 50% table for left-column for 'tunic-or-contrast-dress- section  -->
+            <!-- begin 50% table for right-column for 'tunic-or-contrast-dress- section -->
+            <table class="right-column" width="50%" align="right" 
+            cellspacing="0" cellpadding="0" border="0" 
+            style="padding:15px 10px 30px 10px; 
+            border:1px solid #F54084; 
+            background-color:#eeeeee; 
+            border-radius:7px; margin-bottom:30px;">
+                    <tr>  
+                        <td style="background:#F54084;">
+                            <!-- this is the content inside this table -->
+                        <table class="title-icon" width="100%" align="left" 
+                        cellspacing="0" cellpadding="0" border="0" style="padding:0; text-align:center;">
+                            <tr>
+                                <td>
+                                    <img src="img/CONTRAST-DRESS.jpg">
+                                </td>
+                                <td style="font-family:Arial, Helvetica, sans-serif;
+                                color:#ffffff; padding:15px 15px; font-weight:600; 
+                                text-transform:uppercase; font-size:14px;">
+                                    CONTRAST DRESS ... SAVE OVER 50%
+                                </td>
+                            </tr>
+                        </table>
+                            <tr>
+                                <td>
+                                <p style="font-family:Arial, Helvetica, sans-serif;
+                                color:#303030; padding:0px 0px 0px 15px; 
+                                font-weight:400; line-height:1.8; font-size:14px;">
+                                    <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                                    Round neck dress with short sleeves. Fastens in the back with zip, opening and button. Features button detailing in the front and on the sleeves.Features button detailing in the front and on the sleeves. 
+                                    </p>
+                                </td>
+                            </tr>     
+                            <tr>
+                                <td>
+                                    <p style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#303030; padding:0px 0px 0px 15px; 
+                                    font-weight:400; line-height:1.8;
+                                    font-size:14px;">
+                                    <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
+                                    $89.00 on sale! 
+                                    <span style="text-decoration:line-through;">
+                                        $179.00 reg. price</span>
+                                    </p>
+                                </td>
+                            </tr>     
+                            <tr>
+                                <td>
+                                    <a href="#" style="font-family:Arial, Helvetica, sans-serif;
+                                    color:#F54084; background-color:white; 
+                                    padding:5px 15px; border:1px solid #F54084; 
+                                    border-radius:5px; font-weight:600; 
+                                    font-size:18px; text-decoration:none;">
+                                        shop now
+                                    </a>
+                                </td>
+                            </tr>
+                        </td>
+                    </tr>
+            </table>
+            <!-- end 50% table for right-column for 'tunic-or-contrast-dress- section -->
     </td>
-</tr>                
-        </td>
-    </tr>
-</table>  
-<!-- End -Column -->
-
-
-
-<!-- Start Hero-Right-Column -->
-<table class="right-column" width="50%" align="right" 
-cellspacing="0" cellpadding="0" border="0" 
-style="padding:15px 10px 30px 10px; 
-border:1px solid #F54084; 
-background-color:#eeeeee;
-border-radius:7px; 
-margin-bottom:30px;">
-    <tr>  
-        <td style="background:#F54084;"> <!--#fafafa-->
-
-            <!-- this is the content inside this table -->
-           <table class="title-icon" width="100%" align="left" 
-           cellspacing="0" cellpadding="0" border="0" style="padding:0; text-align:center;">
-               <tr>
-                   <td>
-                     <img src="img/CONTRAST-DRESS.jpg">
-                   </td>
-                   <td style="font-family: 'Open Sans', 'Helvetica Neue', 
-                   Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                   color:#ffffff; padding:15px 15px; font-weight:600; 
-                   text-transform:uppercase; font-size:14px;">
-                       CONTRAST DRESS ... SAVE OVER 50%
-                   </td>
-               </tr>
-           </table>
-           <!-- <tr>
-             <td>
-                 <img src="img/CONTRAST-DRESS.jpg" width="300" height="400" alt="CONTRAST DRESS" />
-             </td>
-         </tr> -->
-         <tr>
-            <td>
-               <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 
-               'Lucida Grande', sans-serif; color:#303030; padding:0px 0px 0px 15px; 
-               font-weight:400; line-height:1.8; font-size:14px;">
-                <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-                Round neck dress with short sleeves. Fastens in the back with zip, opening and button. Features button detailing in the front and on the sleeves.Features button detailing in the front and on the sleeves. 
-                </p>
-            </td>
-        </tr>     
-        <tr>
-           <td>
-               <p style="font-family: 'Open Sans', 'Helvetica    Neue', 
-               Helvetica, Arial, 'Lucida Grande', sans-serif; 
-               color:#303030; padding:0px 0px 0px 15px; font-weight:400; line-height:1.8;
-               font-size:14px;">
-               <!-- This is a brief description that pushes women to buy several handbags. Your marketing should engaging, concise, spontaneous, comical, witty, and it should also appeal to the women's vanity. -->
-               $89.00 on sale! <span style="text-decoration:line-through;">$179.00 reg. price</span>
-               </p>
-           </td>
-       </tr>     
-       <tr>
-          <td style="">
-              <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-              Helvetica, Arial, 'Lucida Grande', sans-serif; 
-              color:#F54084; background-color:white; padding:5px 15px; 
-              border:1px solid #F54084; border-radius:5px; font-weight:600; 
-              font-size:18px; text-decoration:none;">
-                  shop now
-              </a>
-          </td>
-      </tr>
-      </td>
-    </tr>
-</table>
-</td>
-</tr>  
-<!-- End Hero-Right-Column -->                                        
-<!-- End of Section-2-THREE DRESSES SECTION -->
+</tr>
+<!-- end parent row for 'tunic-or-contrast-dress section -->
 
 
 <tr>
     <td>
-        
-
-<!-- BEGIN ROW-3, RIGHT, COLUMN-6 -->               
-                <table class="right-column" width="100%" align="left" 
-                cellspacing="0" cellpadding="0" border="0" 
-                style="padding:10px 10px; border: 1px solid #F54084; 
-                background-color: #dddddd;
-                border-radius:7px;">      
-                  <tr>
-                      <td>
-<!-- ICON-TABLE  ... BEGIN ROW-3:COLUMN-6 -->
-
-                                <table class="icon-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0">
-                                    <tr>                                  
-                                        <td>
-                                            <ul style="display:flex; text-align:center;">
-
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/bags-michael-kors-Bedford-Travel.jpg" width="150" height="150" alt="handbags" /></li>
-
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Bellini Zesty Corduroy Pump.webp" width="150" height="150" alt="ysl-pumps" /></li>
-
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Mika Slingback by Andiamo.webp" width="150" height="150" alt="ysl-pumps" /></li>
-
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/shoes-Ariel Slingback by Beacon.webp" width="150" height="150" alt="ysl-pumps" /></li>
-                                                  
-                                                  <li style="list-style:none; padding:10px 10px;"><img src="img/bags-Saint-Laurent-becky-large-shoulder-bag.jpg" width="150" height="150" alt="handbag" /></li>
-                                            </ul>                                     
-                                        </td>
-                                    </tr>                                     
-                                    <tr>
-                                        <td>
-                                            <a href="#" style="font-family: 'Open Sans', 'Helvetica Neue', 
-                                            Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                            color:#2792ec; padding:15px; font-weight:600; font-size:14px;
-                                            text-decoration:none;">
-                                            SHOP NOW
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>  
-<!-- ICON-TABLE ... END OF ROW-3:COLUMN-6 -->
-                      </td>
-                  </tr>
-                            <tr>                       
-                                <td>
-                                      <p style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
-                                      color:#0000ff; font-weight:500; line-height:1.0; font-size:16px; padding:20px 80px;">
-                                      <span style="font-weight:600; font-size:18px;
-                                      font-style:italic;">
-                                        DESIGNER SHOES AND HANDBAG CLEARANCE SALE:
-                                      </span>
-                                      <br/>
-                                        <br/>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
-                                      </p>
-                                </td>
-                            </tr>      
-                      </table>  
-<!-- END ROW-3, RIGHT, COLUMN-6 -->
-    <!-- </td>
-</tr>         
-</table>        -->
-</td>
+        <!-- begin parent table for "shoes-handbags-sale" -->               
+        <table class="shoes-handbags-sale" width="100%" align="left" 
+        cellspacing="0" cellpadding="0" border="0" 
+        style="padding:10px 10px; border: 1px solid #F54084; 
+        background-color: #dddddd; border-radius:7px;">      
+            <tr>
+                <td>
+                    <!-- ICON-TABLE  ... BEGIN ROW-3:COLUMN-6 -->
+                    <table class="icon-table" width="100%" align="left" 
+                    cellspacing="0" cellpadding="0" border="0">
+                        <tr>                                  
+                            <td>
+                                <ul style="display:flex; text-align:center;">
+                                    <li style="list-style:none; padding:10px 10px;">
+                                        <img src="img/bags-michael-kors-Bedford-Travel.jpg"  
+                                        width="150" height="150" 
+                                        alt="handbags" />
+                                    </li>
+                                    <li style="list-style:none; padding:10px 10px;">
+                                        <img src="img/shoes-Bellini Zesty Corduroy Pump.webp" 
+                                        width="150" height="150" 
+                                        alt="ysl-pumps" />
+                                    </li>
+                                    <li style="list-style:none; padding:10px 10px;">
+                                        <img src="img/shoes-Mika Slingback by Andiamo.webp" 
+                                        width="150" height="150" 
+                                        alt="ysl-pumps" />
+                                    </li>
+                                    <li style="list-style:none; padding:10px 10px;">
+                                        <img src="img/shoes-Ariel Slingback by Beacon.webp" 
+                                        width="150" height="150" 
+                                        alt="ysl-pumps" />
+                                    </li>                 
+                                    <li style="list-style:none; padding:10px 10px;">
+                                        <img src="img/bags-Saint-Laurent-becky-large-shoulder-bag.jpg" 
+                                        width="150" height="150" 
+                                        alt="handbag" />
+                                    </li>
+                                </ul>                                     
+                            </td>
+                        </tr>                                     
+                        <tr>
+                            <td>
+                                <a href="#" style="font-family:Arial, Helvetica, sans-serif;
+                                color:#2792ec; padding:15px; font-weight:600; font-size:14px;
+                                text-decoration:none;">
+                                SHOP NOW
+                                </a>
+                            </td>
+                        </tr>
+                    </table>  
+                    <!-- ICON-TABLE ... END OF ROW-3:COLUMN-6 -->
+                </td>
+            </tr>
+            <tr>                       
+                <td>
+                    <p style="font-family:Arial, Helvetica, sans-serif;
+                    color:#0000ff; font-weight:500; line-height:1.0; 
+                    font-size:16px; padding:20px 80px;">
+                        <span style="font-weight:600; font-size:18px;
+                        font-style:italic;">
+                        DESIGNER SHOES AND HANDBAG CLEARANCE SALE:
+                        </span>
+                    <br/>
+                    <br/>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempore quidem at, recusandae alias vitae ipsam ut, minus facilis voluptatum placeat nesciuntminus facilis voluptatum placeat nesciunt
+                    </p>
+                </td>
+            </tr>      
+        </table>  
+        <!-- end parent table for "shoes-handbags-sale" -->
+    </td>
 </tr>     
-<!-- Section 6 - End "Details Row" -->
+<!-- end parent table for "shoes-handbags-sale" -->
 
-
-
-
-
-<!-- Section 7 - Begin "Interested Row" -->                      
+<!-- begin newsletter section -->                      
 <tr>  
     <td>
-        <table class="interest-table" width="100%" align="left" cellspacing="0" cellpadding="0" border="0" style="padding:75px 0;background:#4E54CB; text-align:center;
-          background: -moz-linear-gradient(top, #4E54CB 0%, #4E54CB 100%);
+        <table class="newsletter" width="100%" align="left" 
+        cellspacing="0" cellpadding="0" border="0" 
+        style="padding:75px 0;background:#4E54CB; 
+        text-align:center; background: -moz-linear-gradient(top, #4E54CB 0%, #4E54CB 100%);
           background: -webkit-linear-gradient(top, #4E54CB 0%,#4E54CB 100%);
           background: linear-gradient(to bottom, #4E54CB 0%,#4E54CB 100%);">
             <tr>
-                <td align="center" style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;">                  
-                    <h3 style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;color:#fff; padding:0 0 35px 0; margin:0;font-size:24px; text-transform:uppercase; font-weight:300;">
-                      DON'T MISS OUT ON ANOTHER ONE OF OUR INCREDIBLE SALES EVENTS !
+                <td align="center" style="font-family:Arial, Helvetica, sans-serif">              
+                    <h3 style="font-family:Arial, Helvetica, sans-serif; 
+                    color:#fff; padding:0 0 35px 0; font-size:24px; 
+                    text-transform:uppercase; font-weight:300;">
+                      DON'T MISS OUT ON ANOTHER INCREDIBLE SALES EVENTS !
                     </h3>
-                    <p style="font-style:italic; font-size:16px; margin:0; line-height:1.2; padding:0 0 35px 0; max-width:400; color:#fff;">
+                    <p style="font-style:italic; font-size:16px; 
+                    line-height:1.5; padding:0 0 35px 0; max-width:400; 
+                    color:#fff;">
                       Sign up for our newsletter and recieve advance notifications 
                       <br/>for all our fantastic fun sales experiences in the future.
                     </p>
-                    <a href="" style="border:2px solid #fff; border-radius:2px; padding:20px 50px; 
-                    text-decoration:none; color:#fff; text-transform:uppercase; font-size:1.2rem; 
-                    font-weight:600;">
+                    <a href="" style="border:2px solid #fff; border-radius:2px; 
+                    padding:20px 50px; text-decoration:none; color:#fff; 
+                    text-transform:uppercase; font-size:1.2rem; font-weight:600;">
                       future sales events
                     </a>                  
                 </td> 
@@ -854,106 +847,105 @@ margin-bottom:30px;">
         </table>
     </td>
 </tr> 
-<!-- Section 7 - End "Interested Row" -->
+<!-- end newsletter section -->
 
 
 
-<!-- Start of Section-8-Footer-Row -->
+
+<!-- begin footer -->
 <tr>  
     <td>
-        <table class="footer-table" width="100%" align="left" cellspacing="0" 
-        cellpadding="0" border="0" style="padding:25px 0px 0px; 
-        background:whitesmoke;">
-<!-- Begin Header -->
-          <tr>
-              <td align="center">
-                <h2 style="padding:25px 0px 10px; font-size:24px; margin:0px; font-weight:100; line-height:1.2;letter-spacing:.3rem;">
-                SHOPILICIOUS<br/>
-                <scan style="font-weight:500;">
-                  Dresses Handbags Shoes
-                </scan> 
-              </h2>
-
-              </td>
-          </tr>
-<!-- End Header -->   
-
-<!-- Begin 6-Icons-Row -->
-          <tr>  
-              <td>
-                  <table class="icon-table" align="center" width="250px" 
-                  align="left" cellspacing="0" cellpadding="0" border="0" style="">
-                      <tr>
-                          <td align="center">
-                              <a href="https://www.twitter.com">
+        <table class="footer" width="100%" align="left" 
+        cellspacing="0" cellpadding="0" border="0" 
+        style="padding:25px 0px 0px; background:whitesmoke;">
+            <!-- begin store branding -->
+            <tr>
+                <td align="center">
+                    <h2 style="padding:25px 0px 10px; font-size:24px; margin:0px; font-weight:100; line-height:1.2;letter-spacing:.3rem;">
+                    SHOPILICIOUS<br/>
+                        <scan style="font-weight:500;">
+                        Dresses Handbags Shoes
+                        </scan> 
+                    </h2>
+                </td>
+            </tr>        
+            <!-- end store branding -->  
+            <!-- begin social media icons -->
+            <tr>  
+                <td>
+                    <table class="icon-table" align="center" width="250px" 
+                    align="left" cellspacing="0" cellpadding="0" border="0" style="">
+                        <tr>
+                            <td align="center">
+                                <a href="https://www.twitter.com">
                                 <img src="https://i.postimg.cc/yxgZMH3b/twitter-icon.png" 
                                 alt="twitter icon" />
-                              </a>
-                          </td>
-                          <td align="center">
-                              <a href="https://www.facebook.com">
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="https://www.facebook.com">
                                 <img src="https://i.postimg.cc/52vmHw0R/facebook-icon.png" 
                                 alt="twitter icon" />
-                              </a>
-                          </td>
-                          <td align="center">
-                              <a href="https://www.google.com">
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="https://www.google.com">
                                 <img src="https://i.postimg.cc/T1pVTbFQ/google-icon.png"
                                 alt="twitter icon" />
-                              </a>
-                          </td>
-                          <td align="center">
-                              <a href="https://www.pinterest.com">
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="https://www.pinterest.com">
                                 <img src="https://i.postimg.cc/wjKXd7Vc/pinterest-icon.png" 
                                 alt="twitter icon" />
-                              </a>
-                          </td>
-                          <td align="center">
-                              <a href="https://www.linkedin.com">
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="https://www.linkedin.com">
                                 <img src="https://i.postimg.cc/W39mR8Wh/linkedin-icon.png"
                                 alt="twitter icon" />
-                              </a>
-                          </td>
-                          <td align="center">
-                              <a href="https://www.youtube.com">
+                                </a>
+                            </td>
+                            <td align="center">
+                                <a href="https://www.youtube.com">
                                 <img src="https://i.postimg.cc/9F991ch4/youtube-icon.png" 
                                 alt="twitter icon" />
-                              </a>
-                          </td>          
-                      </tr>
-                  </table>
-              </td>
-          </tr>
-<!-- End of 6-Icons-Row -->
-
-<!-- Start of Unsubscribe-Row -->
-                      <tr>
-                          <td align="center">
-                              <p style="padding:20px 0; font-family:'Open Sans', 
-                              'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', 
-                              sans-serif; font-weight:400; font-size:10px; 
-                              line-height:1.8; color:#4E54CB;">
-                                Copyright 2019 All Rights Reserved - SHOPILICIOUS Dresses Handbags Shoes, LLC. 
-                                Is your inbox overflowing?
-                                  <a href="" style="color:#2792ec; font-size:10px;">
-                                    Unsubscribe
-                                  </a>
-                              </p>
-                          </td>
-                      </tr>
-<!-- End of Unsubscribe-Row -->
-
+                                </a>
+                            </td>          
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- end social media icons -->
+            <!-- begin unsubscribe -->
+            <tr>
+                <td align="center">
+                    <p style="padding:20px 0; font-family:'Open Sans', 
+                    'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', 
+                    sans-serif; font-weight:400; font-size:10px; 
+                    line-height:1.8; color:#4E54CB;">
+                    Copyright 2019 All Rights Reserved - 
+                    SHOPILICIOUS Dresses Handbags Shoes, LLC. 
+                    Is your inbox overflowing?
+                        <a href="" style="color:#2792ec; font-size:10px;">
+                            Unsubscribe
+                        </a>
+                    </p>
+                </td>
+            </tr>
+            <!-- end unsubscribe -->
         </table>  
     </td>
 </tr>
-<!-- End of Section-8-Footer-Row -->
+<!-- end social media icons -->
 
-    </td>
-  </tr>  
-</table class="cont"><!--end email-wrapper .container{ width:600px;}-->
+</table>
+<!-- END PARENT TABLE FOR 600PX EMAIL WRAPPER = .container{ width:600px; } -->
 
     </td>
   </tr>
-</table><!--end main-wrapper .XXXXX{ width:100%;}-->
+</table>
+<!-- END PARENT TABLE FOR OUTER 100% EMAIL WRAPPER = #container{ width:100%; } -->
+
   </body>
 </html>
